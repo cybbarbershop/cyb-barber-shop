@@ -1,0 +1,54 @@
+@mixin Dark-mode {
+    .body__dark{
+        background-color:$color-dark-one;
+    }
+    .wave__dark{
+        color:$color-dark-one;
+    }
+    .we__dark{
+        color:white;
+    }
+    .cut__dark{
+        background-color: $color-dark-two;
+        color:white;
+    }
+    .security__dark{
+        background-color: $color-dark-two;
+    }
+    .barber__dark{
+        color:white;
+    }
+    .footer__dark{
+        background-color: $color-dark-two;
+        color:white;
+    }
+    
+    .button__dark__mode__icon__dark{
+        color:white;
+        background-color:transparent;
+        font-size:35px;
+        border: none;
+    }
+    
+}
+@mixin Dark-mode-price {
+    .body__black{
+        background-color:$color-dark-one;
+    }
+    .header{
+        .nav{
+            .menu__black{
+                background-color:$color-dark-two;
+                .menu__link__black{
+                    color:white;
+                }
+            }
+        }
+    }
+    .main{
+        .card__price__black{
+            background-color:black;
+            color:white;
+        }
+    }
+}

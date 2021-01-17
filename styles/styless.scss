@@ -1,0 +1,361 @@
+@import "../recurso-sass/normalize";
+@import "../recurso-sass/variables";
+@import "../recurso-sass/darkmode";
+@import "../RWD/device-two";
+@import "../RWD/tablet";
+@import "../RWD/desktop";
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    background-image:url(../recursos/images/barber-shop-header.jpg);
+    background-size:100%;
+    position: relative;;
+    .nav{
+        display:none;
+    }
+    .nav__enable{
+        display:block;
+        position: absolute;
+        left:0;
+        right: 0;
+        z-index:999;
+        .menu{
+            background-color:$color-light-one;
+            display:flex;
+            flex-direction: column;
+            display:flex;
+            padding:2rem 25px;
+            margin:0;
+            list-style:none;
+            height: 100vh;
+            .menu__icon__x{
+                position: absolute;
+                right: 1rem;
+                top:10px;
+                color: #000;
+                font-size:2rem;
+            }
+            .menu__link{
+                text-decoration:none;
+                color:black;
+                font-size:25px;
+                font-weight: 700;
+            }
+            .menu__item{
+                padding:1rem 0;
+                // border:1px solid #eee;
+            }
+            #menu-item-price{
+                border-bottom:1px solid $color-dark-three;
+                border-top:1px solid $color-dark-three;
+            }
+            #menu-item-product{
+                border-bottom:1px solid $color-dark-three;
+            }
+            .button__dark__mode{
+                background-color:transparent;
+                font-size:35px;
+                border: none;
+            }
+            .modal{
+                display:none;
+            }
+            .modal__enable{
+                background-color:rgba(0, 0, 0, 0.603);
+                position: fixed;
+                top:0;
+                left:0;
+                right:0;
+                height: 100vh;
+                color:white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                .modal__close{
+                    font-size:2rem;
+                    position:absolute;
+                    right:1rem;
+                    top:10px;
+                    cursor:pointer;
+                }
+                .modal__description{
+                    font-size:25px;
+                    font-weight: 500;
+                    text-align:center;
+                }
+            }
+        }
+        .menu__dark{
+            background-color:$color-dark-one;
+            .menu__icon__x__dark{
+                color:white;
+            }
+            .menu__link__dark{
+            color:white;
+            }
+        }
+    }
+    .gradient{
+        background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,  rgb(195, 20, 50,.69),rgb(36, 11, 54,.76));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,  rgb(195, 20, 50,.69),rgb(36, 11, 54,.76)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color:white;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 169px;
+        .nav__hamburguer__button{
+            position: absolute;
+            right: 1rem;
+            top:1rem;
+            background-color: transparent;
+            color:white;
+            font-size:24px;
+            border: none;
+        }
+        .baber__title{
+            font-weight:700;
+            font-size:50px;
+            margin: -25px 0 0 0;
+        }
+        .barber__subtitle{
+            font-weight:700;
+            font-size:20px;
+            margin:-10px 0 0 0;
+        }
+        .wave{
+            height: 61px; 
+            overflow: hidden;
+            position: absolute;
+            bottom:0;
+            left:0;
+            right:0;
+            .path{
+                stroke: none; 
+                fill: white;
+            }
+            .path__dark{
+                fill:$color-dark-one;
+            }
+        }
+    }
+    .gradient__dark{
+        background: #43cea2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right,  rgb(67, 206, 162,.69),rgb(24, 90, 157,.76));  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right,  rgb(67, 206, 162,.69),rgb(24, 89, 154,.76)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+}
+.we{
+    display:flex;
+    justify-content: center;
+    display:grid;
+    row-gap:29px;
+    padding:26px 0 56px 0;
+    .we__title{
+        text-align: center;
+        font-weight: 700;
+        font-size:30px;
+        margin:0;
+
+    }
+    .we__cards{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        .we__cards__image{
+            width: 160px;
+            height: 96px;
+        }
+        .we__cards__title{
+            font-weight: 700;
+            font-size:20px;
+            text-align:center;
+        }
+    }
+}
+.product{
+    background-image:url(../recursos/images/barber-shop-product.jpg);
+    height:157px;
+    background-size:100%;
+    .product__color{
+        background-color:rgb(0,0,0,.46);
+        height: 100%;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:0 70px 0 19px;
+        .product__title{
+            font-weight: 700;
+            font-size:25px;
+            margin:0;
+        }
+        .product__description{
+            font-weight:400;
+            font-size:10px;
+        }
+    }
+}
+.cut{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    background-color:$color-light-one;
+    height: 159px;
+    margin-top:16px;
+    padding:0 12px 0 21px;
+    .cut__image__box{
+        background-color:$color-light-two;
+        width: 118px;
+        height: 122px;
+        border-radius:13px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .cut__image{
+        width: 108px;
+        height: 108px;
+        border-radius:13px;
+    }
+    .cut__description__tile{
+        font-weight:700;
+        font-size:25px;
+        margin:0;
+    }
+    .cut__description__word{
+        font-size:10px;
+        font-weight: 400;
+    }
+}
+.security{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    background-color:$color-light-two;
+    height: 159px;
+    margin-top:16px;
+    padding:0 21px 0 21px;
+    color:white;
+    .security__image__box{
+        background-color:$color-light-one;
+        width: 118px;
+        height: 122px;
+        border-radius:13px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
+    .security__image{
+        width: 108px;
+        height: 108px;
+        border-radius:13px;
+    }
+    .security__description__tile{
+        font-weight:700;
+        font-size:25px;
+        margin:0;
+    }
+    .security__description__word{
+        font-size:10px;
+        font-weight: 400;
+    }
+}
+.barber{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    .barber__title{
+        font-weight: 700;
+        font-size:30px;
+        text-align:center;
+    }
+    .barber__image{
+        width: 141px;
+        height: 141px;
+        border-radius:100%;
+    }
+    .barber__name{
+        font-weight: 700;
+        font-size:30px;
+        text-align:center;
+    }
+}
+.footer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+    display:flex;
+    align-items: center;
+    background-color:$color-light-one;
+    // height:67px ;
+    .footer__title{
+        .footer__title__name{
+            font-weight:700;
+            font-size:30px;
+            margin:0;
+        }
+        .footer__title__subname{
+            font-weight: 700;
+            font-size:10px;
+            margin:0;
+        }
+    }
+    .footer__social-media{
+        .footer__social-media__title{
+            font-weight: 700;
+            font-size:10px;
+        }
+        .footer__social-media__menu{
+            padding:0;
+            margin:0;
+            list-style:none;
+            .footer__social-media__menu__link{
+                color:black;
+                text-decoration: none;
+                font-size:10px;
+                font-weight: 700;
+                display:flex;
+                padding:5px 0;
+                display:flex;
+                align-items:flex-end;
+
+            }
+            .footer__social-media__menu__link__dark{
+                color:white;
+            }
+            .footer__social-media__menu__icon{
+                font-size:15px;
+                margin-right:2px;
+            }
+        }
+    }
+    .footer__location{
+        .footer__location__title{
+            font-weight: 700;
+            font-size:10px;
+        }
+        .footer__location__word{
+            font-weight: 700;
+            font-size:9px;
+        }
+    }
+}
+ @include Dark-mode;
+
+@media screen and (min-width:372px){
+    @include width-372;
+}
+@media screen and (min-width:768px){
+    @include tablet;
+}
+@media screen and (min-width:1000px){
+    @include desktop;
+}

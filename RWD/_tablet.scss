@@ -1,0 +1,204 @@
+@mixin tablet {
+    .header{
+        height: 297px;
+        background-position: 0 -100px;
+        .gradient{
+            height: 100%;
+            .baber__title{
+                font-size:100px;
+            }
+            .barber__subtitle{
+                font-size:30px;
+            }
+            .wave{
+                height:110px ;
+            }
+        }
+        .nav{
+            .menu{
+                .modal{
+                    display:none;
+                }
+                .modal__enable{
+                    background-color:rgba(0, 0, 0, 0.603);
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    right:0;
+                    height: 100vh;
+                    color:white;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    .modal__close{
+                        font-size:2rem;
+                        position:absolute;
+                        right:1rem;
+                        top:10px;
+                        cursor:pointer;
+                    }
+                    .modal__description{
+                        font-size:2rem;
+                        font-weight: 500;
+                        text-align:center;
+                    }
+                }
+            }
+        }
+    }
+    .we{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        .we__title{
+            grid-column:1/3;
+            font-size:40px;
+        }
+        #we-gallery{
+            grid-column:1/3;
+        }
+    }
+    .product{
+        height: 347px;
+        background-position:0 -100px;
+        .product__color{
+            padding:0 300px 0 47px;
+            .product__title{
+                font-size:55px;
+            }
+            .product__description{
+                font-size:30px;
+            }
+        }
+    }
+    .cut{
+        height: 360px;
+        padding:0 48px;
+        .cut__image__box{
+            width:312px ;
+            height:314px ;
+            .cut__image{
+                width: 282px;
+                height: 277px;
+            }
+        }
+        .cut__description{
+            .cut__description__tile{
+                font-size:55px;
+            }
+            .cut__description__word{
+                font-size:28px;
+            }
+        }
+    }
+    .security{
+        height: 360px;
+        padding:0 48px;
+        .security__image__box{
+            width:312px ;
+            height:314px ;
+            .security__image{
+                width: 282px;
+                height: 277px;
+            }
+        }
+        .security__description{
+            .security__description__tile{
+                font-size:55px;
+            }
+            .security__description__word{
+                font-size:28px;
+            }
+        }
+    }
+    .barber{
+        .barber__title{
+            font-size:60px;
+        }
+        .barber__image{
+            width: 302px;
+            height: 302px;
+        }
+        .barber__name{
+            font-size:60px;
+        }
+    }
+    .footer{
+        padding:0 55px 100px 55px ;
+        .footer__title{
+            .footer__title__name{
+                font-size:80px;
+            }
+            .footer__title__subname{
+                font-size:25px;
+            }
+        }
+        .footer__social-media{
+            .footer__social-media__title{
+                font-weight: 700;
+                font-size:30px;
+            }
+            .footer__social-media__menu{
+                padding:0;
+                .footer__social-media__menu__link{
+                    font-size:18px;
+                }
+                .footer__social-media__menu__icon{
+                    font-size:38px;
+                    margin-right:2px;
+                }
+            }
+        }
+        .footer__location{
+            .footer__location__title{
+                font-weight: 700;
+                font-size:30px;
+            }
+            .footer__location__word{
+                font-weight: 700;
+                font-size:15px;
+            }
+        }
+    }
+}
+@mixin width-tablet-768{
+    .main{
+        .card__price{
+            .card__price__list{
+                .card__price__menu{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .card__price__menu__item{
+                        font-size:25px;
+                    }
+                    #card-price-menu-item-corte{
+                        &::after{
+                            content: "..............................Q25.00";
+                        }
+                    }
+                    #card-price-menu-item-mascarilla{
+                        &::after{
+                            content: "...........................Q25.00";
+                        }
+                    }
+                    #card-price-menu-item-cejas{
+                        &::after{
+                            content: "................................Q5.00";
+                        }
+                    }
+                    #card-price-menu-item-tinte-barba{
+                        &::after{
+                            content: ".................................Q50.00";
+                        }
+                    }
+                    #card-price-menu-item-tallado-barba{
+                        &::after{
+                            content: ".............................Q25.00";
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}

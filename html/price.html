@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios</title>
+    <link rel="stylesheet" href="../styles/price.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/ea75eeb9bc.js" crossorigin="anonymous"></script> 
+</head>
+<body class="body" id="body-price">
+    
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <ul class="menu" id="menu" >
+                <li class="menu__item" id="menu-item-home"><a href="../index.html" class="menu__link" id="menu-link-home"><i class="menu__icon fas fa-home" id="menu-icon-home"></i> Inicio</a></li>
+                <li class="menu__item" id="menu-item-price"><a href="#" class="menu__link" id="menu-link-price"><i class="menu__icon fas fa-dollar-sign" id="menu-icon-price"></i> Precios</a></li>
+                <li class="menu__item" id="menu-item-product"><a href="#" class="menu__link" id="menu-link-product"><i class="menu__icon fas fa-cut" id="menu-icon-product"></i> Producto</a></li>
+                <section class="modal" id="modal">
+                    <i class="modal__close fas fa-times" id="modal-close"></i>
+                    <p class="modal__description" id="modal-description">
+                        Lo sentimos por el momento esta seccion esta inabilitada 
+                        pronto tendremos nuevos productos
+                    </p>
+                </section>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <section class="card__price" id="card__price">
+            <p class="card__price__title__barber" id="card-price-title-barber">C&B</p>
+            <p class="card__price__subtitle__barber" id="card-price-subtitle-barber">Barber Shop</p>
+            
+            <article class="card__price__list" id="card-price-list">
+                <ul class="card__price__menu" id="card-price-menu">
+                    <li class="card__price__menu__item" id="card-price-menu-item-corte">Corte de cabello</li>
+                    <li class="card__price__menu__item" id="card-price-menu-item-mascarilla">Mascarilla carbon</li>
+                    <li class="card__price__menu__item" id="card-price-menu-item-cejas">Tallado de cejas</li>
+                    <li class="card__price__menu__item" id="card-price-menu-item-tinte-barba">Tinte de barba</li>
+                    <li class="card__price__menu__item" id="card-price-menu-item-tallado-barba">Tallado de barba</li>
+                    
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script src="../app-js/price.js" type="module"></script>
+</body>
+</html>
