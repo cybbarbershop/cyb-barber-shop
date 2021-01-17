@@ -1,0 +1,253 @@
+@mixin desktop {
+    .header{
+        height: 527px;
+        background-attachment: fixed;
+
+        .gradient{
+            .baber__title{
+                font-size:150px;
+            }
+            .barber__subtitle{
+                font-size:50px;
+            }
+        }
+        .nav{
+            position: absolute;
+            left:auto;
+            right:0;
+            top:0;
+            z-index:1000;
+            height:60px;
+            .menu{
+                background-color:transparent;
+                box-shadow:0  0 0;
+                display:grid;
+                grid-template-columns:repeat(3,1fr);
+                #menu-item-home{
+                    grid-column:1/2;
+                    grid-row:1/2;
+                }
+                #menu-item-price{
+                    grid-column:2/3;
+                    grid-row: 1/2;
+                }
+                #menu-item-product{
+                    grid-column:3/4;
+                    grid-row: 1/2;
+                }
+                .menu__icon__x{
+                    display:none;
+                }
+                .menu__link{
+                    color:white;
+                }
+                .modal{
+                    display:none;
+                }
+                .modal__enable{
+                    background-color:rgba(0, 0, 0, 0.74);
+                    position: fixed;
+                    top:0;
+                    left:0;
+                    right:0;
+                    height: 100vh;
+                    color:white;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    .modal__close{
+                        font-size:2rem;
+                        position:absolute;
+                        right:1rem;
+                        top:10px;
+                        cursor:pointer;
+                    }
+                    .modal__description{
+                        font-size:2rem;
+                        font-weight: 500;
+                        text-align:center;
+                    }
+                }
+            }                
+            .menu__item{
+                .button__dark__mode{
+                    background-color:$color-light-one;
+                    font-size:35px;
+                    border: none;
+                    position: fixed;
+                    bottom:0;
+                    left:0;
+                    width: 80px;
+                    height: 80px;
+                    border-radius:100%;
+                    cursor:pointer;
+                }
+                .button__dark__mode__dark{
+                    background-color:$color-dark-two;
+                }
+            }
+        }
+        .nav__fixed{
+            position: fixed;
+            right: 0;
+            left:0;
+            background-color:$color-light-one;
+            .menu{
+                .menu__link__fixed{
+                    color:black;
+                }
+            }
+            .menu__dark{
+                background-color:$color-dark-one;
+                .menu__link__dark{
+                    color:white;
+                }
+            }
+
+        }
+        .wave{
+            height: 196px;
+        }
+    }
+    .we{
+        grid-template-columns:repeat(3,1fr);
+        .we__title{
+            font-size:45px;
+            grid-column:1/span 3;
+        }
+        .we__cards{
+            .we__cards__image{
+                width: 331px;
+                height: 199px;
+            }
+            .we__cards__title{
+                font-size:28px;
+            }
+        }
+        #we-gallery{
+            grid-column:3/4;
+        }
+    }
+    .product{
+        height: 480px;
+        .product__color{
+            padding:0 600px 0 97px;
+            .product__title{
+                font-size:100px;
+            }
+            .product__description{
+                font-size:50px;
+            }
+        }
+    }
+    .cut{
+        height: 478px;
+        padding:0 99px;
+        .cut__image__box{
+            height:432px ;
+            width: 553px;
+            border-radius:33px;
+            .cut__image{
+                width: 500px;
+                height:382px ;
+                border-radius:33px;
+            }    
+        }
+        .cut__description{
+            .cut__description__tile{
+                font-size:100px;
+                font-weight: 500;
+            }
+            .cut__description__word{
+                font-size:35px;
+            }
+        }
+        
+    }
+    .security{
+        height: 478px;
+        // padding:0 99px
+        .security__image__box{
+            height:432px ;
+            width: 553px;
+            border-radius:33px;
+            .security__image{
+                width: 500px;
+                height:382px ;
+                border-radius:33px;
+            }    
+        }
+        .security__description{
+            .security__description__tile{
+                font-size:100px;
+            }
+            .security__description__word{
+                font-size:35px;
+            }
+        }
+        
+    }
+   .barber{
+       .barber__title{
+           font-size:60px;
+       }
+   }
+   .footer{
+    padding:1rem 95px  ;
+    grid-gap:60px;
+    .footer__title{
+        .footer__title__name{
+            font-size:130px;
+        }
+        .footer__title__subname{
+            font-size:40px;
+        }
+    }
+    .footer__social-media{
+        .footer__social-media__title{
+            font-weight: 700;
+            font-size:50px;
+        }
+        .footer__social-media__menu{
+            padding:0;
+            .footer__social-media__menu__link{
+                font-size:39px;
+            }
+            .footer__social-media__menu__icon{
+                font-size:60px;
+                margin-right:2px;
+            }
+        }
+    }
+    .footer__location{
+        .footer__location__title{
+            font-weight: 700;
+            font-size:50px;
+        }
+        .footer__location__word{
+            font-weight: 700;
+            font-size:25px;
+        }
+    }
+}
+}
+@mixin width-desktop-1000 {
+    header{
+        .nav{
+            .menu{
+                height: 70px;
+                .menu__link{
+                    font-size:25px;
+                }
+            }
+        }
+    }
+    .main{
+        padding-top:7rem;
+        display:flex;
+        justify-content: center;
+        .card__price{
+            width: 570px;
+        }
+    }
+}
